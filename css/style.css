@@ -23,6 +23,7 @@
 }
 .nav-li {
     margin-left: 30px;
+    transition: all 0.2s ease 0.3s ;
 }
 
 .banner {
@@ -42,6 +43,20 @@
     bottom: 178px;
     font-family: 'Playfair Display', serif;
 }
+.miguel {
+    position: absolute;
+    animation: miguelgif 7s  infinite;
+    
+    
+  
+}
+
+@keyframes miguelgif {
+    0%   {top: 0px; left: -300px;  }
+    50% {top: 0;left: 0;}
+    100% {top: 0px; left: -300px; }
+    
+}
 .main-div {
     width: 1324px;
     margin: 0 auto;
@@ -49,6 +64,9 @@
 .box1 {
     
     margin-right: 52px;
+}
+.sec1 {
+    margin-top: 114px;
 }
 .sec-h3 {
     margin-top: 84px;
@@ -89,14 +107,29 @@
     text-align: center;
     margin-top: 89px;
 }
+.load:hover {
+    background-color: black;
+}
 .loadmore {
     padding-top: 23px;
     font-size: 16px;
     color: white;
-
+    transition: all 0.3s ease 0.3s;
+}
+.loadmore:hover {
+    font-size: 25px;
 }
 body {
     font-family: 'Poppins', sans-serif;
+}
+.header {
+    
+    position: fixed;
+    height: 114px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
 }
 .space {
     width: 100%;
@@ -133,4 +166,9 @@ body {
 .foot-p {
     margin-top: 45px;
     font-size: 16px;
+}
+.nav-li:hover {
+    color: yellow;
+    font-size: 25px;
+    transition: all 0.2s ease 0.3s ;
 }
